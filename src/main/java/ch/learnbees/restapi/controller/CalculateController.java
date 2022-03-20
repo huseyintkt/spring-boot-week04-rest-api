@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/calculate")
+@RequestMapping("/api/calculates")
 public class CalculateController {
 
     private final CalculateServiceImpl calculateService;
@@ -27,5 +27,4 @@ public class CalculateController {
     public Double calculateCurrentCost(){
         return calculateService.calculateCurrentCost(workingHoursService.getWorkingHoursList());
     }
-
 }

@@ -6,7 +6,6 @@ import ch.learnbees.restapi.service.WorkerService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class WorkerServiceImpl implements WorkerService {

@@ -12,10 +12,18 @@ public class WorkingHours {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToOne
-    private Worker worker;
-
     private int weekNumber;
 
     private Double hour;
+
+    @ManyToOne
+    private Worker worker;
+
+    public WorkingHours(){};
+
+    public WorkingHours(Worker worker, int weekNumber, Double hour) {
+        this.worker = worker;
+        this.weekNumber = weekNumber;
+        this.hour = hour;
+    }
 }

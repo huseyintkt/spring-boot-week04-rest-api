@@ -17,4 +17,12 @@ public class Worker {
     private String lastName;
 
     private String type;
+
+    public Worker() {}
+
+    public Worker(String firstName, String lastName, String type) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.type = type;
+    }
 }

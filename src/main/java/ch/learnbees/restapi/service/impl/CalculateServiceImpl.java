@@ -1,6 +1,5 @@
 package ch.learnbees.restapi.service.impl;
 
-import ch.learnbees.restapi.entity.Worker;
 import ch.learnbees.restapi.entity.WorkingHours;
 import ch.learnbees.restapi.service.CalculateService;
 import org.springframework.stereotype.Service;
